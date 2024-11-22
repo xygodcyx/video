@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #app {
+            text-align: center;
+        }
+
+        #localVideo, #remoteVideo {
+            width: 320px;
+            height: 240px;
+            background-color: #000;
+            margin: 10px;
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>Video Chat</h1>
+    <div id="videos">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+    <div id="controls">
+        <button id="startButton">Start Call</button>
+        <button id="hangupButton" disabled>Hang Up</button>
+    </div>
+</div>
+<script src="client2.js"></script>
+</body>
+</html>
